@@ -12,7 +12,7 @@ public class score : MonoBehaviour
     public void AddScore()
     {
         Score ++;
-        sd = GameObject.Find("ScoreDate").GetComponent<ScoreKeep>();
+        sd = GameObject.Find("ScoreMaster").GetComponent<ScoreKeep>();
     }
 
     void Update()

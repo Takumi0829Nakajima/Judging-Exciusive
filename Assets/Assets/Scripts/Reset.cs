@@ -5,12 +5,13 @@ using UnityEngine;
 public class Reset : MonoBehaviour
 {
     [SerializeField] GameObject _replayObject;
-
+    GameManager gameManager;
+    
     //playPlayer _replayPlayer;
     // Start is called before the first frame update
     void Start()
     {
-       //replayPlayer = _replayObject.GetComponent<ReplayPlayer>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -25,7 +26,7 @@ public class Reset : MonoBehaviour
         {
             //stroy(collision.gameObject, 1.0f);
             //eplayPlayer.CallBall();
-            SM.Reload();
+            gameManager.Reload();
         }
     }
 }

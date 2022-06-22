@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Assets/Scenes/Pinball.unity
     guid: 1a2296ac931118d409e8b99ed34a60b2
+  - enabled: 1
+    path: Assets/Assets/Scenes/Result.unity
+    guid: d067f6581e88bb14f836ec03cfc86139
   m_configObjects: {}

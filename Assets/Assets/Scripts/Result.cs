@@ -12,8 +12,7 @@ public class Result : MonoBehaviour
 
     void Start()
     {
-        ScoreMaster = GameObject.Find("ScoreData");  //ScoreDataを見つける
-        sd = ScoreMaster.GetComponent<ScoreKeep>();
+        sd = GameObject.Find("ScoreMaster").GetComponent<ScoreKeep>();  //ScoreDataを見つける
 
         Score = sd.GetScore();  //ScoreDataの中のGetScore関数を呼び出す
         //アタッチしたオブジェクトに反映したいテキストを紐づける。
